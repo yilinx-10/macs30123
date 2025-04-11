@@ -1,0 +1,23 @@
+
+============================================================
+Platform Info
+============================================================
+CUDA Driver Version: 12.2
+CUDA Runtime Version: 11.7
+
+============================================================
+CUDA Devices
+============================================================
+Device 0 - Name: Tesla V100-PCIE-16GB
+Device 0 - Compute Capability: (7, 0)
+Device 0 - Total Memory: 16151 MB
+Device 0 - Multiprocessors: 80
+Device 0 - Clock Rate: 1380.0 MHz
+Device 0 - Max Threads per Block: X=1024, Y=1024, Z=64
+Device 0 - Max Grid Dimensions: X=2147483647, Y=65535, Z=65535
+Device 0 - Global Memory Size: 15.77 GB
+Device 0 - Warp Size: 32
+Device 0 - Max Register per Block: 65536
+Device 0 - Max Shared Memory per Block: 48.00 KB
+
+
