@@ -1,0 +1,10 @@
+Simulated 10000 Random Walks in: 0.147973 seconds on 1 MPI processes
+Average final position: 99.925607, Standard Deviation: 9.951031
+Simulated 10000 Random Walks in: 0.101224 seconds on 2 MPI processes
+Average final position: 99.883177, Standard Deviation: 9.986194
+Simulated 10000 Random Walks in: 0.064842 seconds on 3 MPI processes
+Average final position: 100.130357, Standard Deviation: 10.021046
+Simulated 10000 Random Walks in: 0.040395 seconds on 4 MPI processes
+Average final position: 100.060839, Standard Deviation: 9.909590
+Simulated 10000 Random Walks in: 0.048990 seconds on 5 MPI processes
+Average final position: 100.043711, Standard Deviation: 9.826026
