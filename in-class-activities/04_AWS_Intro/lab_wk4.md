@@ -21,9 +21,10 @@ In this exercise, we'll launch an EC2 instance, practice running a Python script
     print("Random Average", ran_sum / n)
     ```
 4. Try running the program from the EC2 instance terminal with `python3 ran_avg.py`.
+Random Average 0.5505419606441598
 5. In another terminal window, copy the script to your local machine via `scp`:
     ```bash
-    scp -i "/path-to-your-key/labsuser.pem" ec2-user@your-instance-public-ip:ran_avg.py .
+    scp -i "/path-to-your-key/labsuser.pem" ec2-user@your-instance-public-ip:ran_avg.py cd .
     ```
 5. On your local machine, edit `ran_avg.py` so that you generate 100 random numbers instead of just 10. `scp` the file back to your EC2 instance and check to confirm that the script reflects the update:
     ```bash
@@ -46,7 +47,12 @@ def is_prime(n):
     return True
 
 def lambda_handler(event, context):
-    # TODO
+    num_to_check = event.get('number', [])
+
+    list_of_primes = []
+    for num in num_to_check:
+        if is_prime(num):
+            list_of_primes.append(num)
 
     return {
         'statusCode': 200,

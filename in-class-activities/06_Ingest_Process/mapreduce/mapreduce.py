@@ -42,7 +42,9 @@ class MRMostUsedWord(MRJob):
         '''
         Yield the word that occurs the most in the 5 star reviews
         '''
-        yield max(word_count_pairs)
+        top_ten_pairs = sorted(word_count_pairs, reverse=True)[:10]
+        for i, (number, token) in enumerate(top_ten_pairs):
+            yield f'Top {i}:', f'{token}: {number} times'
 
     def steps(self):
         return [
